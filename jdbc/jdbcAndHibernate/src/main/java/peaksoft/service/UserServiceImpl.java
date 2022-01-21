@@ -20,18 +20,18 @@ public class UserServiceImpl implements UserService {
     }
 
     public void saveUser(String name, String lastName, byte age) {
-        userDao.saveUser(name,lastName,age);
+        userDao.saveUser(name, lastName, age);
     }
 
     public void removeUserById(long id) {
-userDao.removeUserById(1);
+        userDao.removeUserById(1);
     }
 
     public List<User> getAllUsers() {
 
         List<User> listok = userDao.getAllUsers();
 
-        return listok  ;
+        return listok;
     }
 
     public void cleanUsersTable() {
