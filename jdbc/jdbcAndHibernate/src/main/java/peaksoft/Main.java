@@ -4,6 +4,16 @@ import peaksoft.service.UserServiceImpl;
 
 public class Main {
     public static void main(String[] args) {
+
+
+
+
+
+
+
+
+
+        
         UserServiceImpl service = new UserServiceImpl();
         service.createUsersTable();
         service.saveUser("Askar", "Akaev", (byte) 70);
