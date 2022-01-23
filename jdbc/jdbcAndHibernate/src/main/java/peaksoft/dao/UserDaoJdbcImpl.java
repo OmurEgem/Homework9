@@ -33,7 +33,7 @@ public class UserDaoJdbcImpl implements UserDao {
             Statement stmt = conn.createStatement();
         )
         {
-            String SQL = "DROP TABLE users";
+            String SQL = "DROP TABLE IF EXISTS users";
             stmt.executeUpdate(SQL);
             System.out.println("Таблица алынды");
         } catch (SQLException e) {
