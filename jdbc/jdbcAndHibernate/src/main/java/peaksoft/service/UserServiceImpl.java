@@ -1,14 +1,15 @@
 package peaksoft.service;
 
 import peaksoft.dao.UserDao;
-import peaksoft.dao.UserDaoJdbcImpl;
+import peaksoft.dao.UserDaoHibernateImpl;
+
 import peaksoft.model.User;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
-    UserDao userDao = new UserDaoJdbcImpl();
+    UserDao userDao = new UserDaoHibernateImpl();
 
     public void createUsersTable() {
         userDao.createUsersTable();
@@ -24,7 +25,7 @@ public class UserServiceImpl implements UserService {
     }
 
     public void removeUserById(long id) {
-        userDao.removeUserById(1);
+        userDao.removeUserById(id);
     }
 
     public List<User> getAllUsers() {

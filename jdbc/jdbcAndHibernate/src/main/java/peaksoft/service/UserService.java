@@ -1,7 +1,7 @@
 package peaksoft.service;
 
 import peaksoft.dao.UserDao;
-import peaksoft.dao.UserDaoJdbcImpl;
+import peaksoft.dao.UserDaoHibernateImpl;
 import peaksoft.model.User;
 
 import java.util.List;
